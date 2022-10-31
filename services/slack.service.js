@@ -18,14 +18,14 @@ const getSlackInfo = async () => {
                 type: 'section',
                 text: {
                     type: 'mrkdwn',
-                    text: '* *IPCA:* ' + ipca.ipca12 + '%',
+                    text: '* *IPCA:* ' + ipca.ipca12 + '%'.replace('.', ','),
                 },
             },
             {
                 type: 'section',
                 text: {
                     type: 'mrkdwn',
-                    text: '* *IGP-M:* ' + igpm.igpm12 + '%',
+                    text: '* *IGP-M:* ' + igpm.igpm12 + '%'.replace('.', ','),
                 },
             },
         ],
