@@ -9,6 +9,8 @@ const getSlackInfo = async () => {
         *Estes são os valores acumulados para 12 meses:*
         * *IPCA:* ${ipca.ipca12}%
         * *IGP-M:* ${igpm.igpm12}%
+         
+        _(Este é um recurso experimental! Em caso de dúvida, procure seu líder.)_
     `;
 
     return resposta;
