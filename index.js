@@ -13,4 +13,6 @@ app.use(cors());
 app.use('/ipca', ipcaRouter);
 app.use('/igpm', igpmRouter);
 
-app.listen(PORT, () => console.log(`API listening on port ${PORT}`));
+app.listen(process.env.PORT || PORT, () =>
+    console.log(`API listening on port ${PORT}`),
+);
