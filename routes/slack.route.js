@@ -4,7 +4,7 @@ import SlackController from '../controllers/slack.controller.js';
 
 const router = express.Router();
 
-router.get('/', SlackController.getSlackInfo);
+router.post('/', SlackController.getSlackInfo);
 
 router.use((err, req, res, _next) => {
     console.log(`${req.method} ${req.baseUrl} - ${err.message}`);
