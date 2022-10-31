@@ -14,3 +14,5 @@ app.use('/ipca', ipcaRouter);
 app.use('/igpm', igpmRouter);
 
 app.listen(PORT, () => console.log(`API listening on port ${PORT}`));
+
+module.exports = app;
