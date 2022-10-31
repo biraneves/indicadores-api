@@ -4,7 +4,7 @@ import cors from 'cors';
 import ipcaRouter from './routes/ipca.route.js';
 import igpmRouter from './routes/igpm.route.js';
 
-const PORT = 5000;
+const PORT = 3000;
 
 const app = express();
 app.use(express.json());
