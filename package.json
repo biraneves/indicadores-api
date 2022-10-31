@@ -13,6 +13,7 @@
         "nodemon": "^2.0.20"
     },
     "scripts": {
-        "dev": "nodemon index.js"
+        "dev": "nodemon index.js",
+        "run": "node index.js"
     }
 }
