@@ -31,7 +31,7 @@ const getSlackInfo = async () => {
         ],
     };
 
-    return resposta;
+    return JSON.stringify(resposta);
 };
 
 export default { getSlackInfo };
