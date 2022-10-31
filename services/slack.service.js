@@ -11,32 +11,6 @@ const getSlackInfo = async () => {
         * *IGP-M:* ${igpm.igpm12}%
     `;
 
-    // const resposta = {
-    //     blocks: [
-    //         {
-    //             type: 'section',
-    //             text: {
-    //                 type: 'mrkdwon',
-    //                 text: '*Estes são os valores acumulados para 12 meses:*',
-    //             },
-    //         },
-    //         {
-    //             type: 'section',
-    //             text: {
-    //                 type: 'mrkdwn',
-    //                 text: '* *IPCA:* ' + ipca.ipca12 + '%'.replace('.', ','),
-    //             },
-    //         },
-    //         {
-    //             type: 'section',
-    //             text: {
-    //                 type: 'mrkdwn',
-    //                 text: '* *IGP-M:* ' + igpm.igpm12 + '%'.replace('.', ','),
-    //             },
-    //         },
-    //     ],
-    // };
-
     return resposta;
 };
 
