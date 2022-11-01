@@ -6,10 +6,8 @@ const getSlackInfo = async () => {
     const igpm = await IgpmRepository.getIgpmAcumulado12();
 
     const resposta = {
+        response_type: 'in_channel',
         blocks: [
-            {
-                response_type: 'in_channel',
-            },
             {
                 type: 'section',
                 text: {
