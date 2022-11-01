@@ -8,6 +8,7 @@ const getSlackInfo = async () => {
     const resposta = {
         blocks: [
             {
+                response_type: 'in_channel',
                 type: 'section',
                 text: {
                     type: 'plain_text',
