@@ -9,15 +9,20 @@ const getSlackInfo = async () => {
         response_type: 'in_channel',
         blocks: [
             {
-                type: 'section',
+                type: 'header',
                 text: {
                     type: 'plain_text',
-                    text: 'Estes são os valores acumulados para 12 meses: 📈',
+                    text: 'Índices para reajuste',
                     emoji: true,
                 },
             },
             {
-                type: 'divider',
+                type: 'section',
+                text: {
+                    type: 'plain_text',
+                    text: '📈 Valores acumulados para 12 meses:',
+                    emoji: true,
+                },
             },
             {
                 type: 'section',
@@ -35,6 +40,13 @@ const getSlackInfo = async () => {
             },
             {
                 type: 'divider',
+            },
+            {
+                type: 'section',
+                text: {
+                    type: 'mrkdwn',
+                    text: '*Fontes:* IBGE e FGV.',
+                },
             },
             {
                 type: 'section',
