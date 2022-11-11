@@ -8,7 +8,7 @@ const getIpcaAcumulado12 = async () => {
         const res = await axios.get(url);
         const dados = {
             titulo: 'ipca',
-            ipca12: parseFloat(res.data[1].V),
+            valor: parseFloat(res.data[1].V),
         };
 
         return dados;

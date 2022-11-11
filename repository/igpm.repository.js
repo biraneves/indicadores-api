@@ -18,7 +18,7 @@ const getIgpmAcumulado12 = async () => {
 
         const dados = {
             titulo: 'igp-m',
-            igpm12: indices[1],
+            valor: indices[1],
         };
 
         return dados;
